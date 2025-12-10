@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - SLFA</title>
+    <link rel="icon" type="image/png" href="/Users/mac/Desktop/Web Design/SLFA.png">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="/Users/mac/Desktop/Web Design/SLFA.png" alt="SLFA Logo" width="150" height="80">
+        </div>
+        <nav>
+            <ul>
+                <link rel="stylesheet" href="style.css">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="players.html">PLAYERS</a></li>
+                <li><a href="matches.html">MATCHES</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <h1>Contact Us</h1>
+            <p>Get in touch with us for inquiries, partnerships, or support</p>
+           
+        </section>
+
+        <!-- Contact Information Section -->
+        <section class="contact-info">
+            <h2>Get in Touch</h2>
+        <!-- Contact Form Section -->
+        <section class="contact-form-section" id="contact-form">
+            <h2>Send Us a Message</h2>
+            <p>Have a general inquiry? Use the form below to reach out to us.</p>
+            <div class="form-container">
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required placeholder="Enter your email address">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject:</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="player">Become a Player</option>
+                            <option value="agent">Contact an Agent</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="partnership">Partnership</option>
+                            <option value="support">Support</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="6" required placeholder="Enter your message here"></textarea>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit">Send Message</button>
+                        <button type="reset">Clear Form</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Register as a Player Section -->
+        <section class="register-player-section" id="register-player">
+            <h2>Register as a Player</h2>
+            <p>Interested in joining our platform as a player? Fill out the form below to get started.</p>
+            <div class="register-form-container">
+                <form action="#" method="post" id="player-registration-form">
+                    <div class="form-group">
+                        <label for="player-first-name">First Name:</label>
+                        <input type="text" id="player-first-name" name="player_first_name" required placeholder="Enter your first name">
+                    </div>
+                    <div class="form-group">
+                        <label for="player-last-name">Last Name:</label>
+                        <input type="text" id="player-last-name" name="player_last_name" required placeholder="Enter your last name">
+                    </div>
+                    <div class="form-group">
+                        <label for="player-email">Email Address:</label>
+                        <input type="email" id="player-email" name="player_email" required placeholder="Enter your email address">
+                    </div>
+                    <div class="form-group">
+                        <label for="player-phone">Phone Number:</label>
+                        <input type="tel" id="player-phone" name="player_phone" required placeholder="Enter your phone number">
+                    </div>
+                    <div class="form-group">
+                        <label for="player-date-of-birth">Date of Birth:</label>
+                        <input type="date" id="player-date-of-birth" name="player_date_of_birth" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="player-position">Preferred Position:</label>
+                        <select id="player-position" name="player_position" required>
+                            <option value="">Select your position</option>
+                            <option value="goalkeeper">Goalkeeper</option>
+                            <option value="defender">Defender</option>
+                            <option value="midfielder">Midfielder</option>
+                            <option value="forward">Forward</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="player-current-club">Current Club/Team:</label>
+                        <input type="text" id="player-current-club" name="player_current_club" placeholder="Enter your current club (if any)">
+                    </div>
+                    <div class="form-group">
+                        <label for="player-experience">Playing Experience:</label>
+                        <select id="player-experience" name="player_experience" required>
+                            <option value="">Select your experience level</option>
+                            <option value="amateur">Amateur</option>
+                            <option value="semi-professional">Semi-Professional</option>
+                            <option value="professional">Professional</option>
+                            <option value="international">International</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="player-bio">Bio/Description:</label>
+                        <textarea id="player-bio" name="player_bio" rows="4" placeholder="Tell us about yourself, your playing style, and achievements"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" name="player_terms" required> I agree to the terms and conditions
+                        </label>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit">Register as Player</button>
+                        <button type="reset">Clear Form</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Find an Agent Section -->
+        <section class="find-agent-section" id="find-agent">
+            <h2>Find an Agent</h2>
+            <p>Connect with licensed agents who can help advance your career. Search for an agent or browse available agents below.</p>
+            <!-- Agent Contact Form -->
+            <div class="agent-contact-form">
+                <form action="#" method="post" id="agent-contact-form">
+                    <div class="form-group">
+                        <label for="agent-select">Select Agent:</label>
+                        <select id="agent-select" name="agent_id" required>
+                            <option value="">Select an agent</option>
+                            <option value="001">Ibrahim Bangura - Player Representation & Transfers</option>
+                            <option value="002">Mohamed Kamara - Youth Development & Scouting</option>
+                            <option value="003">Alusine Sesay - Contract Negotiations & Career Management</option>
+                            <option value="004">Ibrahim Conteh - International Transfers & Club Relations</option>
+                            <option value="005">Mohamed Koroma - Marketing & Brand Management</option>
+                            <option value="006">Alhaji Kamara - Player Development & Mentoring</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-name">Your Name:</label>
+                        <input type="text" id="contact-name" name="contact_name" required placeholder="Enter your full name">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email">Your Email:</label>
+                        <input type="email" id="contact-email" name="contact_email" required placeholder="Enter your email address">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-phone">Your Phone:</label>
+                        <input type="tel" id="contact-phone" name="contact_phone" placeholder="Enter your phone number">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-reason">Reason for Contact:</label>
+                        <select id="contact-reason" name="contact_reason" required>
+                            <option value="">Select a reason</option>
+                            <option value="representation">Seeking Representation</option>
+                            <option value="transfer">Transfer Opportunity</option>
+                            <option value="contract">Contract Negotiation</option>
+                            <option value="career">Career Advice</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-message-agent">Message:</label>
+                        <textarea id="contact-message-agent" name="contact_message" rows="5" required placeholder="Tell the agent about yourself and what you're looking for"></textarea>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit">Send Message to Agent</button>
+                        <button type="reset">Clear Form</button>
+                    </div>
+                </form>
+            </div>
+        <!-- Learn More Section -->
+        <section class="learn-more-section" id="learn-more">
+            <h2>Learn More About SLFA</h2>
+            <p>Discover more about our mission, vision, and how we support players and agents in Sierra Leone.</p>
+            
+            <div class="learn-more-content">
+                <article class="info-card">
+                   
+                    <h3>About Us</h3>
+                    <p>Learn about our mission, vision, values, and the team behind SLFA.</p>
+                    <a href="aboutus.html"><button type="button">Learn More About Us</button></a>
+                </article>
+        <!-- Office Location Map -->
+        <section class="map-section">
+            <h2>Find Us</h2>
+            
+            <p>Visit our headquarters at 21 Battery Street, Kingtom, Freetown, Sierra Leone</p>
+            <a href="aboutus.html"><button type="button">Learn More About Us</button></a>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-logo">
+            <img src="/Users/mac/Desktop/Web Design/SLFA.png" alt="SLFA Logo" width="155" height="80">
+        </div>
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="players.html">Players</a></li>
+                <li><a href="matches.html">Matches</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="social-media">
+            <a href="https://facebook.com" aria-label="Facebook">
+                <img src="/Users/mac/Desktop/Web Design/fb.png" alt="Facebook" width="30" height="30">
+            </a>
+            <a href="https://linkedin.com" aria-label="LinkedIn">
+                <img src="/Users/mac/Desktop/Web Design/in.png" alt="LinkedIn" width="30" height="30">
+            </a>
+            <a href="https://twitter.com" aria-label="Twitter/X">
+                <img src="/Users/mac/Desktop/Web Design/x.png" alt="Twitter/X" width="30" height="30">
+            </a>
+            <a href="https://Instagram.com" aria-label="Instagram">
+                <img src="/Users/mac/Desktop/Web Design/ig.jpeg" alt="Instagram" width="30" height="30">
+            </a>
+        </div>
+        <p>&copy; 2024 SLFA. All rights reserved.</p>
+    </footer>
+    <script src="animations.js"></script>
+</body>
+</html>
+
