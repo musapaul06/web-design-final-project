@@ -1,0 +1,385 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+img {
+    width: 45%;
+    height: auto;
+    border-radius: 9px;
+}
+
+h1, h2, h3 {
+    color: #002B5B; 
+    font-weight: 700;
+}
+
+
+button {
+    padding: 12px 20px;
+    background: #00A8E8; 
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: #0077A9; 
+}
+
+/* Button click animation - ripple effect */
+@keyframes ripple {
+    to {
+        width: 300px;
+        height: 300px;
+        opacity: 0;
+    }
+}
+
+button {
+    position: relative;
+    overflow: hidden;
+}
+
+header {
+    background: #002B5B;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+header .logo img {
+    width: 140px;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00A8E8;
+}
+
+
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero h1 {
+    margin: 20px 0;
+    font-size: 2.5rem;
+}
+
+.hero p {
+    max-width: 750px;
+    margin: auto;
+    color: #444;
+}
+
+
+.news-grid,
+.players-grid,
+.matches-grid,
+.values-grid,
+.team-grid,
+.agents-grid,
+.players-list {
+    display: grid;
+    gap: 30px;
+    padding: 40px 20px;
+}
+
+.news-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.players-grid,
+.matches-grid {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.player-card,
+.match-card,
+.player-profile,
+.agent-profile,
+.value-item,
+.team-member,
+.player-item {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+}
+
+.player-card:hover,
+.match-card:hover,
+.player-profile:hover,
+.agent-profile:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0,0,0,0.15);
+}
+
+section {
+    padding-bottom: 50px;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+section p {
+    text-align: center;
+    color: #555;
+}
+
+
+form {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    max-width: 750px;
+    margin: auto;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+}
+
+.form-container,
+.register-form-container {
+    margin-top: 25px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #002B5B;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #CCC;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #00A8E8;
+    box-shadow: 0 0 5px rgba(0,168,232,0.3);
+}
+
+.form-actions {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+
+footer {
+    background: #002B5B;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    list-style: none;
+    margin: 20px 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #00A8E8;
+}
+
+.social-media img {
+    width: 35px;
+    margin: 0 8px;
+    transition: 0.3s;
+}
+
+.social-media img:hover {
+    transform: scale(1.15);
+}
+
+/* Match Statistics Styles */
+.match-stats {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+
+.match-stats h4 {
+    color: #002B5B;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    border-bottom: 2px solid #00A8E8;
+    padding-bottom: 8px;
+}
+
+.stats-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.stat-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.stat-row:last-child {
+    border-bottom: none;
+}
+
+.stat-label {
+    font-weight: 600;
+    color: #002B5B;
+    font-size: 0.95rem;
+}
+
+.stat-value {
+    color: #555;
+    font-size: 0.9rem;
+    text-align: right;
+}
+
+.goals-scorers {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 2px solid #e0e0e0;
+}
+
+.goals-scorers h4 {
+    color: #002B5B;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.goals-scorers p {
+    text-align: left;
+    margin: 8px 0;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.youtube-link {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 2px solid #e0e0e0;
+    text-align: center;
+}
+
+.youtube-button {
+    background: #FF0000;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.youtube-button:hover {
+    background: #CC0000;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.3);
+}
+
+.match-result {
+    display: flex;
+    flex-direction: column;
+}
+
+.match-result img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .players-grid,
+    .matches-grid,
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .stat-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    
+    .stat-value {
+        text-align: left;
+    }
+}
